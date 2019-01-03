@@ -4,8 +4,8 @@
   "description": "Kanban board for Asana",
   "main": "main.js",
   "scripts": {
-    "prodbuild": "npm rebuild node-sass && NODE_ENV=production TYPEKIT_KIT_ID=ctj8mvm CLIENT_ID=111587542481677 GOOGLE_ANALYTICS_ID=UA-36944240-2 webpack --config ./webpack.config.js --progress --colors",
-    "stagingbuild": "npm rebuild node-sass && NODE_ENV=production TYPEKIT_KIT_ID=ctj8mvm CLIENT_ID=96803738622514 GOOGLE_ANALYTICS_ID=UA-36944240-2 webpack --config ./webpack.config.js --progress --colors",
+    "prodbuild": "npm rebuild node-sass && webpack --config ./webpack.config.js --progress --colors",
+    "stagingbuild": "npm rebuild node-sass && webpack --config ./webpack.config.js --progress --colors",
     "start": "node server.js",
     "test": "CLIENT_ID=1337 babel-tape-runner tests/**/*.js"
   },
